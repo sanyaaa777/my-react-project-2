@@ -1,0 +1,44 @@
+.options {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 600;
+   
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.good{
+    background-color: #73af75;
+}
+
+.bad{
+background-color: hsl(3, 58%, 74%);
+}
+
+.neutral{
+    background-color: #86cde1;
+}
+
+.good:hover {
+    background-color: #43a947;
+}
+.neutral:hover {
+    background-color: #47c1e3;
+}
+
+.bad:hover {
+    background-color: hsl(3, 67%, 58%);
+}

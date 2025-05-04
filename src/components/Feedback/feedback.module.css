@@ -1,0 +1,57 @@
+.feedback {
+  display: flex;
+  gap:24px;
+  background-color: #c0bfbf27;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  font-size: 28px;
+  color: #565656;
+  margin-bottom: 16px;
+}
+
+.feed {
+  font-size: 18px;
+  color: #353535;
+  margin: 6px 0;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+  100% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+}
+
+.feedback {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.feedback.exit {
+  animation: fadeOut 0.5s ease forwards;
+}
